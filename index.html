@@ -1,260 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Welcome to EBEB GRACEWILL SCHOOL</title>
-  <style>
-    :root {
-      --primary: #004aad;
-      --accent: #fcbf49;
-      --text: #333;
-      --bg: #f9f9f9;
-    }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 1.8rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    nav {
-      background-color: #003380;
-      text-align: center;
-      padding: 0.8rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-      transition: color 0.3s, border-bottom 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-      border-bottom: 2px solid var(--accent);
-    }
-
-    .hero {
-      background-color: var(--primary);
-      color: white;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-    }
-
-    .welcome {
-      max-width: 900px;
-      margin: 3rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .welcome h2 {
-      color: var(--primary);
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    .welcome p {
-      text-align: justify;
-      margin-bottom: 1.5rem;
-    }
-
-    .buttons {
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    .buttons a {
-      display: inline-block;
-      background-color: var(--primary);
-      color: white;
-      text-decoration: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-      margin: 0.5rem;
-    }
-
-    .buttons a:hover {
-      background-color: var(--accent);
-      color: #000;
-    }
-
-    .features {
-      background-color: #eef3f9;
-      padding: 3rem 1rem;
-      text-align: center;
-    }
-
-    .features h2 {
-      color: var(--primary);
-      margin-bottom: 1.5rem;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .feature {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .feature h3 {
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-          /* --- Social media icons --- */
-    /* --- Social media icons (Font Awesome version) --- */
-    .social-links {
-      margin-top: 1rem;
-    }
-
-    .social-links a {
-      margin: 0 10px;
-      display: inline-block;
-      color: white;
-      font-size: 20px;
-      transition: transform 0.3s, color 0.3s;
-    }
-
-    .social-links a:hover {
-      transform: scale(1.2);
-      color: var(--accent);
-    }
-
-    }
-    /* --- Hero Section Styling --- */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('school-building.jpg') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto 1.5rem;
-}
-
-.cta-button {
-  background-color: var(--accent);
-  color: #fff;
-  padding: 12px 28px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: var(--primary);
-}
-/* --- Footer Section --- */
-footer {
-  background-color: var(--primary);
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 40px;
-}
-
-footer h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-footer p {
-  font-size: 0.95rem;
-  margin: 5px 0;
-  opacity: 0.9;
-}
-
-footer .social-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: 500;
-}
-
-footer .social-links a:hover {
-  text-decoration: underline;
-}
-
-footer .copyright {
-  margin-top: 1rem;
-  font-size: 0.85rem;
-  opacity: 0.7;
-}
-
-  </style>
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- Your site CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>EBEB GRACEWILL SCHOOL</header>
@@ -265,41 +20,45 @@ footer .copyright {
     <a href="contact.html">Contact</a>
   </nav>
 
- <section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to EBEB GRACEWILL SCHOOL</h1>
-    <p>Building bright futures through quality education, discipline, and character.</p>
-    <a href="contact.html" class="cta-button">Contact Us Today</a>
-  </div>
-</section>
-
-
-  <section class="welcome">
-    <h2>Our Commitment</h2>
-    <p>
-      At EBEB GRACEWILL SCHOOL, we are committed to providing a nurturing and
-      intellectually stimulating environment that helps every child discover and
-      reach their fullest potential. Our mission is to develop excellence,
-      integrity, and creativity through quality teaching and holistic education.
-    </p>
-
-    <div class="buttons">
-      <a href="about.html">Learn More</a>
-      <a href="contact.html">Contact Us</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to EBEB GRACEWILL SCHOOL</h1>
+      <p>Building bright futures through quality education, discipline, and character.</p>
+      <a href="contact.html" class="cta-button">Contact Us Today</a>
     </div>
   </section>
 
-  <section class="features">
-    <h2>Why Choose EBEB GRACEWILL SCHOOL?</h2>
-    <div class="feature-grid">
+  <!-- WELCOME / MISSION -->
+  <section class="content welcome">
+    <h2>Our Commitment</h2>
+    <p>
+      At EBEB GRACEWILL SCHOOL, we are committed to providing a nurturing and intellectually stimulating
+      environment that helps every child discover and reach their fullest potential. Our mission is to
+      develop excellence, integrity, and creativity through quality teaching and holistic education.
+    </p>
+
+    <div class="buttons" style="text-align:center; margin-top:1rem;">
+      <a href="about.html" class="cta-button">Learn More</a>
+      <a href="contact.html" class="cta-button">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" aria-labelledby="features-heading">
+    <h2 id="features-heading" style="width:100%; text-align:center; margin-bottom:1rem; color:var(--primary);">Why Choose EBEB GRACEWILL SCHOOL?</h2>
+
+    <div class="feature-grid" style="max-width:1000px; margin:0 auto;">
       <div class="feature">
         <h3>Experienced Teachers</h3>
         <p>Our team of qualified educators is passionate about inspiring and guiding students to academic excellence.</p>
       </div>
+
       <div class="feature">
         <h3>Modern Learning Environment</h3>
         <p>We provide a safe, comfortable, and technology-driven atmosphere that supports creativity and innovation.</p>
       </div>
+
       <div class="feature">
         <h3>Holistic Development</h3>
         <p>We focus on academics, moral values, leadership, and extracurricular activities for well-rounded growth.</p>
@@ -307,44 +66,35 @@ footer .copyright {
     </div>
   </section>
 
+  <!-- SINGLE, CLEAN FOOTER -->
   <footer>
-      <footer>
-    <footer>
-  <p>© 2025 EBEB GRACEWILL SCHOOL. All rights reserved.</p>
+    <div class="footer-container">
+      <h3>EBEB GRACEWILL SCHOOL</h3>
+      <p>60 Inawole Quarters, near Liberty Hospital, Adaba, Awotan, Apete, Ibadan</p>
+      <p>Email: ebebgracewillschool@gmail.com | Phone: +234 818 968 1450</p>
 
-  <div class="social-links">
-    <a href="https://www.facebook.com/profile.php?id=61568463972235" target="_blank" title="Visit us on Facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
+      <div class="social-links" aria-label="Social links">
+        <a href="https://www.facebook.com/profile.php?id=61568463972235" target="_blank" rel="noopener" title="Visit us on Facebook">
+          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        </a>
 
-    <a href="https://wa.me/2348189681450" target="_blank" title="Chat with us on WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
+        <a href="https://wa.me/2348189681450" target="_blank" rel="noopener" title="Chat with us on WhatsApp">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
 
-    <a href="#" title="Instagram (coming soon)">
-      <i class="fab fa-instagram"></i>
-    </a>
-  </div>
-</footer>
-<footer>
-  <div class="footer-container">
-    <h3>EBEB GRACEWILL SCHOOL</h3>
-    <p>60 Inawole Quarters, near Liberty Hospital, Adaba, Awotan, Apete, Ibadan</p>
-    <p>Email: ebebgracewillschool@gmail.com | Phone: +234 818 968 1450</p>
+        <a href="#" title="Instagram (coming soon)">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
 
-    <div class="social-links">
-      <a href="https://www.facebook.com/profile.php?id=61568463972235" target="_blank">Facebook</a>
-      <a href="https://wa.me/2348189681450" target="_blank">WhatsApp</a>
+      <p class="copyright">© <span id="year"></span> EBEB GRACEWILL SCHOOL. All rights reserved.</p>
     </div>
+  </footer>
 
-    <p class="copyright">© <span id="year"></span> EBEB GRACEWILL SCHOOL. All rights reserved.</p>
-  </div>
-</footer>
-
-<script>
-  // Auto update year
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+  <script>
+    // Auto update year
+    const yEl = document.getElementById('year');
+    if (yEl) yEl.textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
